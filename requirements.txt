@@ -5,3 +5,4 @@ data
 prox
 paddle
 paddle2onnx
+tritonclient
