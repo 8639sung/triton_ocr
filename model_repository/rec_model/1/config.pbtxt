@@ -1,0 +1,26 @@
+name: "rec_model"
+platform: "onnxruntime_onnx"
+max_batch_size: 8 
+
+input [
+  {
+    name: "x"
+    data_type: TYPE_FP32
+    dims: [3, 48, -1] 
+  }
+]
+
+output [
+  {
+    name: "softmax_2.tmp_0"
+    data_type: TYPE_FP32
+    dims: [-1, 3690] 
+  }
+]
+
+instance_group [
+  {
+    kind: KIND_GPU
+    count: 1
+  }
+]

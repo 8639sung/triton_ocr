@@ -1,8 +1,3 @@
-common
-dual
-tight
-data
-prox
-paddle
 paddle2onnx
 tritonclient
+onnx

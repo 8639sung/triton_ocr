@@ -1,0 +1,26 @@
+name: "det_model"
+platform: "onnxruntime_onnx"
+max_batch_size: 4 
+
+input [
+  {
+    name: "x"
+    data_type: TYPE_FP32
+    dims: [3, 960, 960]
+  }
+]
+
+output [
+  {
+    name: "sigmoid_0.tmp_0"
+    data_type: TYPE_FP32
+    dims: [1, 960, 960]
+  }
+]
+
+instance_group [
+  {
+    kind: KIND_GPU
+    count: 1
+  }
+]
