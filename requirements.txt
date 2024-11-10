@@ -1,3 +1,15 @@
+common 
+dual 
+tight 
+data 
+prox
+paddle
 paddle2onnx
-tritonclient
 onnx
+
+tritonclient[all]
+fastapi
+uvicorn
+pillow
+numpy
+python-multipart
